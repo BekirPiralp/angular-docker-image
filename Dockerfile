@@ -11,7 +11,7 @@ RUN apt-get update \
 WORKDIR /home/indirilenler/
 
 ## "dosya indiriliyor"
-RUN wget -c https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-x64.tar.xz \
+RUN wget -c https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-x64.tar.xz && \
     #"dosyadan çıkarma işlemi yapılıyor"
     tar -xvf *.tar.xz && \
     rm *.tar.xz && \
